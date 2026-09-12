@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prado Planejados | Móveis Sob Medida em Ponta Grossa</title>
+    <title>Prado Planejados | Móveis para vida toda - Ponta Grossa</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -21,11 +21,16 @@
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
                     },
                     colors: {
-                        brand: {
-                            gold: '#C5A059',
-                            dark: '#111827',
-                            gray: '#1F2937',
-                            accent: '#25D366'
+                        gold: {
+                            400: '#E5C158',
+                            500: '#C5A059',
+                            600: '#A6823B',
+                            700: '#876523'
+                        },
+                        dark: {
+                            900: '#0B0B0C',
+                            800: '#141416',
+                            700: '#1F1F23'
                         }
                     }
                 }
@@ -33,464 +38,268 @@
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-yellow-500 selection:text-white">
+<body class="bg-dark-900 text-gray-100 font-sans antialiased selection:bg-gold-500 selection:text-black">
 
     <!-- Header / Navbar Sticky -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <header class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-md border-b border-gold-500/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-2">
-                <span class="text-2xl font-black tracking-tight text-gray-900 uppercase">
-                    PRADO <span class="text-amber-600 font-light">PLANEJADOS</span>
-                </span>
+            
+            <!-- Logo da Empresa -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="logo.jpg" alt="Prado Planejados Logo" class="h-12 w-auto rounded border border-gold-500/30 object-contain bg-black">
+                <div class="hidden sm:block">
+                    <span class="text-xl font-bold tracking-wider text-white block uppercase">PRADO <span class="text-gold-500 font-light">PLANEJADOS</span></span>
+                    <span class="text-[10px] text-gold-400 tracking-widest block font-medium uppercase">Móveis para vida toda!</span>
+                </div>
             </a>
 
             <!-- Nav Links Desktop -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
-                <a href="#diferenciais" class="hover:text-amber-600 transition">Diferenciais</a>
-                <a href="#ambientes" class="hover:text-amber-600 transition">Ambientes</a>
-                <a href="#como-funciona" class="hover:text-amber-600 transition">Como Funciona</a>
-                <a href="#depoimentos" class="hover:text-amber-600 transition">Avaliações</a>
-                <a href="#faq" class="hover:text-amber-600 transition">Dúvidas</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-300">
+                <a href="#diferenciais" class="hover:text-gold-400 transition">Diferenciais</a>
+                <a href="#projeto3d" class="hover:text-gold-400 transition">Projeto 3D</a>
+                <a href="#ambientes" class="hover:text-gold-400 transition">Projetos Reais</a>
+                <a href="#depoimentos" class="hover:text-gold-400 transition">Avaliações</a>
+                <a href="#faq" class="hover:text-gold-400 transition">Dúvidas</a>
             </nav>
 
             <!-- CTA Header -->
-            <a href="https://wa.me/5542999298980?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." 
+            <a href="https://wa.me/5542999298980?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Prado%20Planejados%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
                target="_blank"
-               class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-2.5 rounded-full shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/30 transition flex items-center gap-2 text-sm">
+               class="bg-gold-500 hover:bg-gold-600 text-black font-extrabold px-5 py-2.5 rounded-full shadow-lg shadow-gold-500/10 hover:shadow-gold-500/30 transition flex items-center gap-2 text-sm">
                 <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>Solicitar Orçamento</span>
+                <span>(42) 99929-8980</span>
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 text-white pt-16 pb-24 overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center"></div>
+    <section class="relative bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900 text-white pt-12 pb-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-12 gap-12 items-center">
             
             <div class="md:col-span-7 space-y-6 text-center md:text-left">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider">
-                    <i class="fa-solid fa-star"></i> Marcenaria Sob Medida em Ponta Grossa - PR
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-gem"></i> Marcenaria Sob Medida em Ponta Grossa - PR
                 </div>
                 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-                    Transforme seu imóvel com móveis <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">exclusivos e planejados.</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                    Móveis sob medida para a <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-200">sua vida toda!</span>
                 </h1>
                 
                 <p class="text-lg text-gray-300 max-w-2xl leading-relaxed">
-                    Aproveitamento inteligente de espaço, acabamento de alto padrão e projetos 3D personalizados para realizar o projeto dos seus sonhos.
+                    Transforme seu imóvel com aproveitamento inteligente de espaço, sofisticação e o acabamento de alto padrão que você e sua família merecem.
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
-                    <a href="https://wa.me/5542988894140?text=Ol%C3%A1!%20Quero%20fazer%20um%20projeto%203D%20gratuito%20de%20m%C3%B3veis%20planejados." 
+                <!-- Destaque Condição do Projeto 3D -->
+                <div class="p-4 rounded-xl bg-gold-500/10 border border-gold-500/30 text-amber-200 text-sm flex items-start gap-3">
+                    <i class="fa-solid fa-circle-check text-gold-400 text-xl mt-0.5"></i>
+                    <p>
+                        <strong class="text-white block">Projeto 3D Exclusivo:</strong> 
+                        Ao fechar a execução dos móveis conosco, o seu projeto 3D sai <strong class="text-gold-400 uppercase">100% GRATUITO</strong>! *(Cobrado apenas caso o projeto não seja fechado)*.
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
+                    <a href="https://wa.me/5542999298980?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20e%20Projeto%203D." 
                        target="_blank" 
-                       class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-amber-500/20 hover:scale-[1.02] transition flex items-center justify-center gap-3 text-base">
-                        <i class="fa-brands fa-whatsapp text-2xl text-emerald-950"></i>
-                        <span>Garantir Projeto 3D Grátis</span>
-                    </a>
-                    <a href="#ambientes" class="border border-gray-600 hover:border-gray-400 bg-gray-800/50 backdrop-blur-sm text-gray-200 font-semibold px-6 py-4 rounded-xl transition text-center">
-                        Ver Ambientes Realizados
+                       class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-emerald-600/20 hover:scale-[1.02] transition flex items-center justify-center gap-3 text-base">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Solicitar Orçamento no WhatsApp</span>
                     </a>
                 </div>
 
                 <!-- Prova Social Rápida -->
-                <div class="pt-8 border-t border-gray-800 grid grid-cols-3 gap-4 text-center md:text-left">
+                <div class="pt-6 border-t border-gray-800 grid grid-cols-3 gap-4 text-center md:text-left">
                     <div>
-                        <p class="text-2xl font-bold text-amber-400">100%</p>
+                        <p class="text-2xl font-bold text-gold-400">100%</p>
                         <p class="text-xs text-gray-400">MDF de Alta Densidade</p>
                     </div>
                     <div>
-                        <p class="text-2xl font-bold text-amber-400">5.0 ★</p>
-                        <p class="text-xs text-gray-400">Satisfação dos Clientes</p>
+                        <p class="text-2xl font-bold text-gold-400">Ponta Grossa</p>
+                        <p class="text-xs text-gray-400">Atendimento Regional</p>
                     </div>
                     <div>
-                        <p class="text-2xl font-bold text-amber-400">Sob Medida</p>
-                        <p class="text-xs text-gray-400">Entrega no Prazo</p>
+                        <p class="text-2xl font-bold text-gold-400">Garantia</p>
+                        <p class="text-xs text-gray-400">Acabamento Premium</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card de Pré-Orçamento Rápido -->
-            <div class="md:col-span-5 bg-white text-gray-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-gray-100">
+            <!-- Card de Pré-Orçamento -->
+            <div class="md:col-span-5 bg-dark-800 text-gray-100 rounded-3xl p-6 sm:p-8 shadow-2xl border border-gold-500/30">
                 <div class="text-center mb-6">
-                    <h3 class="text-2xl font-extrabold text-gray-900">Simule seu Projeto</h3>
-                    <p class="text-sm text-gray-500 mt-1">Receba um atendimento rápido via WhatsApp</p>
+                    <h3 class="text-2xl font-black text-white">Simule seu Projeto</h3>
+                    <p class="text-xs text-gold-400 font-medium mt-1">Fale diretamente com nossa equipe no WhatsApp</p>
                 </div>
 
                 <form id="leadForm" onsubmit="sendToWhatsapp(event)" class="space-y-4">
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Seu Nome</label>
-                        <input type="text" id="name" required placeholder="Ex: Maria Silva" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-amber-500 focus:outline-none transition">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1">Seu Nome</label>
+                        <input type="text" id="name" required placeholder="Ex: Maria Silva" class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-gray-700 text-white focus:ring-2 focus:ring-gold-500 focus:outline-none transition">
                     </div>
 
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Qual ambiente deseja planejar?</label>
-                        <select id="ambiente" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-amber-500 focus:outline-none transition bg-white">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1">Qual ambiente deseja planejar?</label>
+                        <select id="ambiente" class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-gray-700 text-white focus:ring-2 focus:ring-gold-500 focus:outline-none transition">
                             <option value="Cozinha Planejada">Cozinha Planejada</option>
                             <option value="Dormitório / Closet">Dormitório / Closet</option>
                             <option value="Sala de Estar / Painel TV">Sala de Estar / Painel TV</option>
                             <option value="Banheiro">Banheiro</option>
-                            <option value="Apartamento Completo">Apartamento Completo / Casa Toda</option>
+                            <option value="Apartamento / Casa Completa">Casa Toda / Apartamento Completo</option>
                             <option value="Escritório / Comercial">Escritório ou Comercial</option>
                         </select>
                     </div>
 
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Previsão da Obra / Mudança</label>
-                        <select id="prazo" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-amber-500 focus:outline-none transition bg-white">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1">Previsão da Obra ou Mudança</label>
+                        <select id="prazo" class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-gray-700 text-white focus:ring-2 focus:ring-gold-500 focus:outline-none transition">
                             <option value="Urgente (Este mês)">Urgente (Este mês)</option>
                             <option value="Nos próximos 2 a 3 meses">Nos próximos 2 a 3 meses</option>
-                            <option value="Pesquisando orçamentos">Apenas pesquisando preços</option>
+                            <option value="Apenas pesquisando preços">Apenas cotando valores</option>
                         </select>
                     </div>
 
-                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-4 rounded-xl shadow-lg shadow-emerald-600/30 transition flex items-center justify-center gap-2 text-base">
+                    <button type="submit" class="w-full bg-gold-500 hover:bg-gold-600 text-black font-extrabold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base">
                         <i class="fa-brands fa-whatsapp text-xl"></i>
-                        <span>Receber Orçamento Sem Compromisso</span>
+                        <span>Enviar Dados via WhatsApp</span>
                     </button>
                 </form>
 
-                <p class="text-xs text-center text-gray-400 mt-4">
-                    <i class="fa-solid fa-lock"></i> Seus dados estão seguros. Resposta rápida.
+                <p class="text-[11px] text-center text-gray-400 mt-4 leading-relaxed">
+                    <i class="fa-solid fa-shield-halved text-gold-400 mr-1"></i> Projeto 3D sem custo ao fechar a execução dos móveis!
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Benefícios & Diferenciais -->
-    <section id="diferenciais" class="py-20 bg-white">
+    <!-- Transparência & Garantia -->
+    <section id="diferenciais" class="py-20 bg-dark-800 border-y border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Por que escolher a Prado Planejados</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">Qualidade superior e compromisso em cada detalhe do seu móvel</p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Por que a Prado Planejados?</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Compromisso, acabamento refinado e respeito ao cliente</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-amber-200 transition group">
-                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition">
-                        <i class="fa-solid fa-cube"></i>
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-dark-900 border border-gray-800 hover:border-gold-500/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-drafting-compass"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Projeto 3D Realista</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Visualize como seu espaço vai ficar antes mesmo de começar a fabricação. Ajustamos cores, módulos e acabamentos de acordo com o seu gosto.
+                    <h3 class="text-xl font-bold text-white mb-3">Projeto 3D Detalhado</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Visualize cada detalhe das cores, divisões e módulos antes da fabricação. Ao fechar com a gente, o projeto é totalmente **gratuito**.
                     </p>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-amber-200 transition group">
-                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition">
-                        <i class="fa-solid fa-shield-halved"></i>
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-dark-900 border border-gray-800 hover:border-gold-500/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-gem"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">100% MDF de Primeira Linha</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Trabalhamos exclusivamente com matérias-primas de alta durabilidade, resistência à umidade e ferragens reforçadas com amortecimento.
+                    <h3 class="text-xl font-bold text-white mb-3">100% MDF & Ferragens Nobres</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Utilizamos matérias-primas de alta durabilidade, portas com amortecedores e gavetas telescópicas com fechamento suave.
                     </p>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-amber-200 transition group">
-                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition">
-                        <i class="fa-solid fa-truck-ramp-box"></i>
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-dark-900 border border-gray-800 hover:border-gold-500/50 transition">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-handshake"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Montagem Limpa e Pontual</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Equipe própria e capacitada para garantir a instalação perfeita em Ponta Grossa e região, respeitando rigorosamente os prazos acordados.
+                    <h3 class="text-xl font-bold text-white mb-3">Entrega Pontual no Prazo</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Compromisso com o cronograma combinado em contrato e equipe de montadores qualificada para deixar sua casa impecável.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Galeria de Ambientes -->
-    <    <!-- Galeria de Ambientes Atualizada -->
-    <section id="ambientes" class="py-20 bg-gray-900 text-white">
+    <!-- Galeria de Fotos do Instagram -->
+    <section id="ambientes" class="py-20 bg-dark-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2">Nossos Trabalhos Reais</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-white">Projetos executados pela Prado Planejados em Ponta Grossa</p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Trabalhos Realizados</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Inspire-se com alguns dos nossos projetos em Ponta Grossa</p>
+                <p class="text-xs text-gray-400 mt-2">Fotos reais de cozinhas, dormitórios e salas entregues.</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Foto 1 -->
-                <div class="relative group rounded-2xl overflow-hidden bg-gray-800 shadow-xl border border-gray-800">
-                    <img src="COLE_O_LINK_DA_FOTO_1_AQUI.jpg" alt="Cozinha Planejada Prado Planejados" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/30 to-transparent p-6 flex flex-col justify-end">
-                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Cozinha sob medida</span>
-                        <h3 class="text-lg font-bold text-white">Cozinha Planejada</h3>
+                <!-- Foto 1: Cozinha -->
+                <div class="relative group rounded-2xl overflow-hidden bg-dark-800 border border-gray-800 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Cozinha Planejada Prado" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider mb-1">Cozinha Planejada</span>
+                        <h3 class="text-lg font-bold text-white">Torre Quente & Ilha Sob Medida</h3>
                     </div>
                 </div>
 
-                <!-- Foto 2 -->
-                <div class="relative group rounded-2xl overflow-hidden bg-gray-800 shadow-xl border border-gray-800">
-                    <img src="COLE_O_LINK_DA_FOTO_2_AQUI.jpg" alt="Dormitório Planejado" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/30 to-transparent p-6 flex flex-col justify-end">
-                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Dormitórios & Closets</span>
-                        <h3 class="text-lg font-bold text-white">Quarto de Casal</h3>
+                <!-- Foto 2: Quarto / Closet -->
+                <div class="relative group rounded-2xl overflow-hidden bg-dark-800 border border-gray-800 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Dormitório Planejado Prado" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider mb-1">Quartos & Closets</span>
+                        <h3 class="text-lg font-bold text-white">Guarda-Roupa Inteligente</h3>
                     </div>
                 </div>
 
-                <!-- Foto 3 -->
-                <div class="relative group rounded-2xl overflow-hidden bg-gray-800 shadow-xl border border-gray-800">
-                    <img src="COLE_O_LINK_DA_FOTO_3_AQUI.jpg" alt="Sala de Estar Planejada" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/30 to-transparent p-6 flex flex-col justify-end">
-                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Salas & Painéis</span>
-                        <h3 class="text-lg font-bold text-white">Painel Ripado para TV</h3>
+                <!-- Foto 3: Painel Sala -->
+                <div class="relative group rounded-2xl overflow-hidden bg-dark-800 border border-gray-800 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Sala de Estar Prado" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider mb-1">Sala de Estar</span>
+                        <h3 class="text-lg font-bold text-white">Painel Ripado com LED</h3>
                     </div>
                 </div>
 
-                <!-- Foto 4 -->
-                <div class="relative group rounded-2xl overflow-hidden bg-gray-800 shadow-xl border border-gray-800">
-                    <img src="COLE_O_LINK_DA_FOTO_4_AQUI.jpg" alt="Banheiro Planejado" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/30 to-transparent p-6 flex flex-col justify-end">
-                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Banheiros</span>
-                        <h3 class="text-lg font-bold text-white">Gabinete de Banheiro</h3>
+                <!-- Foto 4: Banheiro -->
+                <div class="relative group rounded-2xl overflow-hidden bg-dark-800 border border-gray-800 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Banheiro Planejado" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider mb-1">Banheiros</span>
+                        <h3 class="text-lg font-bold text-white">Gabinete & Espelheira</h3>
                     </div>
                 </div>
 
-                <!-- Foto 5 -->
-                <div class="relative group rounded-2xl overflow-hidden bg-gray-800 shadow-xl border border-gray-800">
-                    <img src="COLE_O_LINK_DA_FOTO_5_AQUI.jpg" alt="Área Gourmet Planejada" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/30 to-transparent p-6 flex flex-col justify-end">
-                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Espaço Gourmet</span>
-                        <h3 class="text-lg font-bold text-white">Área Externa & Churrasqueira</h3>
+                <!-- Foto 5: Gourmet -->
+                <div class="relative group rounded-2xl overflow-hidden bg-dark-800 border border-gray-800 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Área Gourmet" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider mb-1">Área Gourmet</span>
+                        <h3 class="text-lg font-bold text-white">Espaço Churrasco & Lazer</h3>
                     </div>
                 </div>
 
-                <!-- Foto 6 -->
-                <div class="relative group rounded-2xl overflow-hidden bg-gray-800 shadow-xl border border-gray-800">
-                    <img src="COLE_O_LINK_DA_FOTO_6_AQUI.jpg" alt="Escritório Planejado" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/30 to-transparent p-6 flex flex-col justify-end">
-                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Corporativo & Home Office</span>
-                        <h3 class="text-lg font-bold text-white">Escritório Sob Medida</h3>
+                <!-- Foto 6: Escritório -->
+                <div class="relative group rounded-2xl overflow-hidden bg-dark-800 border border-gray-800 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Escritório Planejado" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider mb-1">Corporativo / Home Office</span>
+                        <h3 class="text-lg font-bold text-white">Mesa & Armários de Trabalho</h3>
                     </div>
                 </div>
-
             </div>
 
-            <!-- Botão do Instagram -->
+            <!-- Chamada Instagram -->
             <div class="text-center mt-12">
-                <a href="https://www.instagram.com/pradoplanejadospg" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 text-white font-bold px-6 py-3 rounded-full shadow-lg transition text-sm">
-                    <i class="fa-brands fa-instagram text-xl"></i>
-                    <span>Ver galeria completa com vídeos no Instagram @pradoplanejadospg</span>
+                <a href="https://www.instagram.com/pradoplanejadospg" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:opacity-95 transition text-sm">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                    <span>Siga @pradoplanejadospg no Instagram para ver mais fotos e vídeos reais</span>
                 </a>
             </div>
         </div>
     </section>
-        
 
-
-    <!-- Como Funciona -->
-    <section id="como-funciona" class="py-20 bg-gray-50">
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-20 bg-dark-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Passo a Passo Simplificado</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">Como funciona a criação do seu móvel na Prado Planejados</p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-8 relative">
-                <!-- Passo 1 -->
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center relative">
-                    <div class="w-12 h-12 bg-amber-500 text-gray-950 font-black rounded-full flex items-center justify-center text-xl mx-auto mb-4">1</div>
-                    <h3 class="font-bold text-gray-900 text-lg mb-2">Primeiro Contato</h3>
-                    <p class="text-xs text-gray-600">Você nos chama no WhatsApp e envia as medidas iniciais ou a planta do imóvel.</p>
-                </div>
-
-                <!-- Passo 2 -->
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center relative">
-                    <div class="w-12 h-12 bg-amber-500 text-gray-950 font-black rounded-full flex items-center justify-center text-xl mx-auto mb-4">2</div>
-                    <h3 class="font-bold text-gray-900 text-lg mb-2">Projeto 3D</h3>
-                    <p class="text-xs text-gray-600">Criamos o projeto em 3D detalhado para você visualizar as cores, ferragens e disposição.</p>
-                </div>
-
-                <!-- Passo 3 -->
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center relative">
-                    <div class="w-12 h-12 bg-amber-500 text-gray-950 font-black rounded-full flex items-center justify-center text-xl mx-auto mb-4">3</div>
-                    <h3 class="font-bold text-gray-900 text-lg mb-2">Aprovação & Fabricação</h3>
-                    <p class="text-xs text-gray-600">Ajustamos tudo ao seu orçamento e enviamos o projeto para a linha de produção.</p>
-                </div>
-
-                <!-- Passo 4 -->
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center relative">
-                    <div class="w-12 h-12 bg-amber-500 text-gray-950 font-black rounded-full flex items-center justify-center text-xl mx-auto mb-4">4</div>
-                    <h3 class="font-bold text-gray-900 text-lg mb-2">Entrega & Montagem</h3>
-                    <p class="text-xs text-gray-600">Instalação completa realizada por profissionais experientes, com limpeza e acabamento perfeito.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Depoimentos / Prova Social -->
-    <section id="depoimentos" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Depoimentos</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">O que dizem os clientes de Ponta Grossa</p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Depoimentos</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Quem faz indica a Prado Planejados</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Avaliação 1 -->
-                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
-                    <div class="flex text-amber-400 mb-3 text-sm">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 text-sm italic mb-4">"A cozinha dos meus sonhos ficou pronta no prazo estipulado! O atendimento da equipe foi excepcional desde o projeto 3D até a montagem final."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 text-amber-800 font-bold flex items-center justify-center text-sm">CS</div>
-                        <div>
-                            <p class="font-bold text-gray-900 text-sm">Camila S.</p>
-                            <p class="text-xs text-gray-500">Ponta Grossa - PR</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Avaliação 2 -->
-                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
-                    <div class="flex text-amber-400 mb-3 text-sm">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 text-sm italic mb-4">"Móveis de extrema qualidade! O acabamento é impecável e o aproveitamento de espaço no meu apartamento foi fantástico."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 text-amber-800 font-bold flex items-center justify-center text-sm">RO</div>
-                        <div>
-                            <p class="font-bold text-gray-900 text-sm">Rodrigo O.</p>
-                            <p class="text-xs text-gray-500">Ponta Grossa - PR</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Avaliação 3 -->
-                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
-                    <div class="flex text-amber-400 mb-3 text-sm">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 text-sm italic mb-4">"Recomendo de olhos fechados a Prado Planejados. Fizeram todo meu closet e a sala de estar. Preço justo e ótimo acabamento."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 text-amber-800 font-bold flex items-center justify-center text-sm">FF</div>
-                        <div>
-                            <p class="font-bold text-gray-900 text-sm">Fernanda F.</p>
-                            <p class="text-xs text-gray-500">Ponta Grossa - PR</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Tire suas Dúvidas</h2>
-                <p class="text-3xl font-extrabold text-gray-900">Perguntas Frequentes</p>
-            </div>
-
-            <div class="space-y-4">
-                <details class="bg-white p-6 rounded-xl border border-gray-200 cursor-pointer group">
-                    <summary class="font-bold text-gray-900 flex justify-between items-center">
-                        Vocês cobram pelo desenvolvimento do projeto 3D?
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
-                    </summary>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                        Não! Nós fazemos a apresentação inicial do projeto 3D e orçamento sem nenhum custo ou compromisso para você.
-                    </p>
-                </details>
-
-                <details class="bg-white p-6 rounded-xl border border-gray-200 cursor-pointer group">
-                    <summary class="font-bold text-gray-900 flex justify-between items-center">
-                        Qual o prazo médio de entrega após a contratação?
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
-                    </summary>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                        O prazo exato depende da complexidade dos ambientes, mas acordamos a data final em contrato e garantimos o cumprimento pontual.
-                    </p>
-                </details>
-
-                <details class="bg-white p-6 rounded-xl border border-gray-200 cursor-pointer group">
-                    <summary class="font-bold text-gray-900 flex justify-between items-center">
-                        Quais as formas de pagamento disponíveis?
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
-                    </summary>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                        Oferecemos condições facilitadas de pagamento no cartão de crédito ou descontos especiais para pagamentos à vista.
-                    </p>
-                </details>
-
-                <details class="bg-white p-6 rounded-xl border border-gray-200 cursor-pointer group">
-                    <summary class="font-bold text-gray-900 flex justify-between items-center">
-                        Atendem apenas Ponta Grossa ou cidades vizinhas?
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
-                    </summary>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                        Atendemos Ponta Grossa e toda a região dos Campos Gerais. Entre em contato para verificar a disponibilidade de atendimento na sua cidade.
-                    </p>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- Banner Final CTA -->
-    <section class="py-16 bg-gradient-to-r from-amber-600 to-amber-500 text-gray-950 text-center">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Pronto para transformar a sua casa?</h2>
-            <p class="text-lg font-medium opacity-90 max-w-2xl mx-auto mb-8">
-                Fale agora com nossos consultores de design e solicite seu orçamento sem compromisso.
-            </p>
-            <a href="https://wa.me/5542988894140?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meus%20m%C3%B3veis%20planejados." 
-               target="_blank"
-               class="bg-gray-950 hover:bg-gray-900 text-white font-black px-8 py-4 rounded-xl shadow-2xl transition inline-flex items-center gap-3 text-lg">
-                <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
-                <span>Chamar no WhatsApp Agora</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 text-sm">
-            <div>
-                <span class="text-xl font-black text-white uppercase tracking-wider block mb-3">
-                    PRADO <span class="text-amber-500 font-light">PLANEJADOS</span>
-                </span>
-                <p class="text-xs text-gray-400 leading-relaxed">
-                    Especialistas em móveis sob medida e marcenaria de alto padrão em Ponta Grossa e região.
-                </p>
-            </div>
-
-            <div>
-                <h4 class="font-bold text-white mb-3 uppercase text-xs tracking-wider">Contato & Atendimento</h4>
-                <p class="mb-2"><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Ponta Grossa - PR</p>
-                <p class="mb-2"><i class="fa-brands fa-whatsapp text-emerald-500 mr-2"></i> (42) 99929-8980</p>
-                <p><i class="fa-brands fa-instagram text-amber-500 mr-2"></i> @pradoplanejadospg</p>
-            </div>
-
-            <div>
-                <h4 class="font-bold text-white mb-3 uppercase text-xs tracking-wider">Redes Sociais</h4>
-                <a href="https://www.instagram.com/pradoplanejadospg" target="_blank" class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-gray-200 px-4 py-2 rounded-lg transition border border-gray-800">
-                    <i class="fa-brands fa-instagram text-xl text-pink-500"></i>
-                    <span>Siga-nos no Instagram</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-gray-900 text-center text-xs text-gray-600">
-            © <script>document.write(new Date().getFullYear());</script> Prado Planejados. Todos os direitos reservados. Ponta Grossa - PR.
-        </div>
-    </footer>
-
-    <!-- Script de envio para WhatsApp -->
-    <script>
-        function sendToWhatsapp(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const ambiente = document.getElementById('ambiente').value;
-            const prazo = document.getElementById('prazo').value;
-
-            const text = `Olá! Meu nome é *${name}*.\nGostaria de solicitar um orçamento para *${ambiente}*.\nPrevisão: ${prazo}.\nVim através do site da Prado Planejados!`;
-            const encodedText = encodeURIComponent(text);
-            const phoneNumber = "5542988894140"; // Insira aqui o número oficial do WhatsApp
-
-            window.open(`https://wa.me/${phoneNumber}?text=${encodedText}`, '_blank');
-        }
-    </script>
-</body>
-</html>
+                <div class="p-6 rounded-2xl bg-dark-900 border border-gray-800">
+                    <div class="flex text-gold-400 mb-3 text-sm">
+ 
